@@ -1,0 +1,23 @@
+{
+  "name": "api-ts",
+  "version": "1.0.0",
+  "description": "API-TS",
+  "main": "app.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SbsCruz/api-github-ts.git"
+  },
+  "author": "Sebastian Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SbsCruz/api-github-ts/issues"
+  },
+  "homepage": "https://github.com/SbsCruz/api-github-ts#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
