@@ -1,0 +1,57 @@
+* {
+  background-color: #21232a;
+  color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#title {
+  text-align: center;
+}
+#subtitle {
+  text-align: center;
+  background-color: #1d1e1f;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 3rem;
+  justify-content: space-around;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  background-color: #1d1e1f;
+  border-style: solid;
+  border-radius: 9%;
+  border-color: transparent;
+}
+
+#stars {
+  background-color: #1d1e1f;
+}
+#updated {
+  background-color: #1d1e1f;
+}
+#allStars {
+  background-color: #1d1e1f;
+  text-align: center;
+}
+
+p, h2, li, a {
+    background-color: #1d1e1f;
+
+}
+
+li {
+  margin: 1rem 0;
+}
+
+a {
+    cursor: pointer;
+}
