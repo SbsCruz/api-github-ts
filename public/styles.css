@@ -30,14 +30,13 @@
   border-style: solid;
   border-radius: 9%;
   border-color: transparent;
+  width: 30%;
 }
 
-#stars {
+#stars, #updated, #allStars, #topFive, #noH {
   background-color: #1d1e1f;
 }
-#updated {
-  background-color: #1d1e1f;
-}
+
 #allStars {
   background-color: #1d1e1f;
   text-align: center;
@@ -54,4 +53,8 @@ li {
 
 a {
     cursor: pointer;
+}
+
+#title > a { 
+  background-color: #21232a;
 }
