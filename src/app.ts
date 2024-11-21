@@ -78,18 +78,18 @@ const showAllRepoStars = (starsCount: number) => {
 
 // TOP STARS REPO
 const getTopRepos = (repoList: Repo[]) => {
-  const topRepo = filterRepoByStars(5, repoList);
+  const topRepo = filterRepoByStars(1, repoList);
   return topRepo
-    .sort((a: Repo, b: Repo) => a.stargazers_count - b.stargazers_count)
-    .reverse()
+    .sort((a: Repo, b: Repo) => b.stargazers_count - a.stargazers_count)
     .slice(0, 5);
 };
 // for displaying in HTML we use the showRepoFiveStar function
 
 // NO-H REPOS
 const getNoHRepos = (repoList: Repo[]) => {
+  const regH = new RegExp('^[Hh]')
   return repoList.filter(({ name }) => {
-    return name[0] !== "h";
+    return !regH.test(name[0]);
   });
 };
 
@@ -140,8 +140,8 @@ getAllStars();
 getTopFiveRepo();
 getReposWithoutH();
 
-// module.exports = {
-//   filterRepoByStars,
-//   filterRepoDates,
-//   getRepoStarsCount,
-// };
+export {
+  getNoHRepos,
+  getTopRepos
+}
+
